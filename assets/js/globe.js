@@ -18,6 +18,7 @@ const world = Globe()(document.getElementById("globe"))
   .hexTopColor((d) => weightColor(d.sumWeight))
   .hexSideColor((d) => weightColor(d.sumWeight))
   .hexBinMerge(true)
+  .enableZoom(false)
   .enablePointerInteraction(false); // performance improvement
 
 let mockData = [];
@@ -29,11 +30,11 @@ for (let i = 0; i < 200; i++) {
   mockData.push({
     lat: +randomLatitude,
     lng: +randomLongitude,
-    pop: +randomPop,
+    pop: randomPop,
   });
 }
 // world.hexBinPointsData(mockData);
 
 // Add auto-rotation
 world.controls().autoRotate = true;
-world.controls().autoRotateSpeed = 0.6;
+world.controls().autoRotateSpeed = 0.9;
