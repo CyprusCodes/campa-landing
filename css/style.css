@@ -6562,7 +6562,7 @@ video { width: 100%; }
 
 .bg-overlay[data-style="6"] { background: -webkit-radial-gradient(left top, circle, #FE68BB 38%, #4294FA 66%); background: radial-gradient(circle at left top, #FE68BB 38%, #4294FA 66%); opacity: .9; }
 
-.bg-overlay[data-style="7"] { background: -webkit-radial-gradient(right top, circle, #c4d622 20%, #93d839 38%, #4294FA 66%); background: radial-gradient(circle at right top, #c4d622 20%, #93d839 38%, #4294FA 66%); opacity: .9; }
+.bg-overlay[data-style="7"] { background: -webkit-radial-gradient(right top, circle, #c4d622 20%, #93d839 38%, #4294FA 66%); background: radial-gradient(circle at right top, #c4d622 20%, #4294FA 38%, #4294FA 66%); opacity: .4; }
 
 .bg-overlay[data-style="8"] { background: -webkit-linear-gradient(top, #e02b20 0%, #720462 100%); background: linear-gradient(180deg, #e02b20 0%, #720462 100%); opacity: .9; }
 
