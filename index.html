@@ -66,21 +66,10 @@
                             <nav>
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#about">About Us</a></li>
                                     <li><a href="#">Features</a></li>
-                                    <li class="dropdown"><a href="#">Layout</a>
-                                        <ul class="dropdown-menu">
-                                            <li class="dropdown-submenu"><a href="#">Topbar</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="header-topbar.html">Light</a></li>
-                                                    <li><a href="header-topbar-dark.html">Dark</a></li>
-                                                    <li><a href="header-topbar-transparent.html">Transparent</a></li>
-                                                    <li><a href="header-topbar-colored.html">Colored</a></li>
-                                                    <li><a href="header-topbar-fullwidth.html">Fullwidth</a></li>
-                                                </ul>
-                                            </li>
-
-                                        </ul>
+                                    <li><a href="#contact">Contact Us</a></li>
+                                </ul>
                             </nav>
                         </div>
                     </div>
@@ -89,8 +78,6 @@
             </div>
         </header>
         <!-- end: Header -->
-
-
         <!-- Section -->
         <section class="fullscreen" data-bg-parallax="../img/1.jpg">
             <div class="bg-overlay"></div>
@@ -100,22 +87,22 @@
                     <div class="slide-captions text-light">
                         <!-- Captions -->
                         <span data-animate="fadeInUp" data-animate-delay="300" class="strong"><a href="#"
-                                class="business"><span class="business">Let's Do This</span></a>
+                           class="business"><span class="business">Let's Do This</span></a>
                         </span>
                         <h1 data-animate="fadeInUp" data-animate-delay="600">We’re Campa.AI, A Creative<br>Startup Based
                             in Melburne</h1>
                         <div data-animate="fadeInUp" data-animate-delay="900">
-                            <button type="button" class="btn btn-roundeded btn-reveal btn-reveal-left" id="now"><span>SUBCRIBE
-                                    NOW</span><i class="icon-chevron-right"></i></button>
+                            <button type="button" class="btn btn-roundeded btn-reveal btn-reveal-left">
+                                <a href="#now">
+                                <span>SUBCRIBE
+                                    NOW</span><i class="icon-chevron-right"></i>
+                                </a>
+                                </button>
                         </div>
-
                     </div>
                 </div>
         </section>
-
         <!-- end: Section -->
-
-
         <!-- Text Boxes -->
         <section class="no-padding equalize" data-equalize-item=".text-box">
             <div class="row d-flex justify-content-center">
@@ -123,6 +110,7 @@
                 <div class="col-lg-2">
                     <div class="text-box hover-effect text-dark">
                         <a href="#"> <i class="fa fa-paper-plane"></i>
+                            
                             <h3>Tags &amp; Models </h3>
                             <p>Ispendisse consectetur fringilla luctus usce id mi diam, non ornare.</p>
                         </a>
@@ -162,11 +150,10 @@
             </div>
         </section>
         <!-- end: Text Boxes -->
-
         <!-- About us -->
-        <section>
-            <div class="container ">
-                <div class="row ">
+        <section  id="about">
+            <div class="container">
+                <div class="row">
                     <div class="col-lg-5 m-b-60 ">
                         <h4>About us</h4>
                         <h2>Set your goals high, and don't stop till you get there.</h2>
@@ -174,8 +161,8 @@
                             that never been told!. Fusce id mi diam, non ornare. Fusce id mi diam, non ornare orci.
                             Pellentesque ipsum erat, facilisis ut venenatis eu.</p>
                         <a href="#services " class="btn btn-dark btn-outline btn-roundeded ">Our Services</a>
-                    </div>
-                    <div class="col-lg-6 offset-1 m-t-40 ">
+                            </div>
+                        <div class="col-lg-6 offset-1 m-t-40 ">
                         <div class="row ">
                             <!-- features box -->
                             <div class="col-lg-6 ">
@@ -189,19 +176,12 @@
             </div>
         </section>
         <!-- end: About us -->
-
-
-
-
-
-
         <!-- Section -->
         <section class="fullscreen" data-bg-parallax="./img/">
             <div class="bg-overlay" data-style="7"></div>
             <div class="shape-divider" data-style="7" data-position="top" data-flip-vertical="true"></div>
             <div class="shape-divider" data-style="7"></div>
             <div class="container">
-
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="text-middle">
@@ -212,9 +192,7 @@
                                     as you always wanted.</p>
                                 <a href="#" class="btn btn-light btn-outline btn-rounded">Read More</a>
                             </div>
-
                         </div>
-
                     </div>
                     <div class="col-lg-5">
                         <img alt="real-estate" src="img/3.webp" class="img-fluid m-b-12">
@@ -224,7 +202,6 @@
             </div>
         </section>
         <!-- end: Section -->
-
         <!-- Page Content -->
         <section id="page-content">
             <div class="container">
@@ -265,17 +242,15 @@
                                 </p>
                             </li>
                             <!--end: Timeline item-->
-
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
     </div>
     </section>
     <!-- end: Page Content -->
        <!-- Subscribe-->
-
-    <section class="text-center background-image p-t-200 p-b-200 text-light" style="background-image:url(img/back.jpg);">
+    <section class="text-center background-image p-t-200 p-b-200 text-light" id="now" style="background-image:url(img/back.jpg);">
         <div id="particles-dots" class="particles"></div>
         <div class="container">
             <div data-animate="fadeInUp">
@@ -291,24 +266,26 @@
                 <div class="search-form">
                     <h6>Stay ready, we`re launching soon</h6>
                     <div class="d-flex justify-content-center">
-                    <form class="form-inline col-lg-6" method="get" action="#">
+                    <form class="form-inline col-lg-6" name="newsletter-subscription" id="newsletter-subscription" onsubmit="event.preventDefault(); return validateForm()" class="newsletter-form wow pixFadeUp" data-pixsaas="newsletter-subscription">
                         <div class="input-group center input-group-md">
-                            <input type="text" placeholder="Enter your email" class="form-control">
+                            <input type="email" placeholder="Enter your email" class="form-control" id="newsletter-form-email">
                             <span class="input-group-btn">
-                                <button type="submit" class="btn btn-blue">Subscribe</button>
+                                <button type="submit" class="btn btn-blue" id="newsletter-wiki-submit">Subscribe</button>
                             </span>
                         </div>
+                          <div id="form-result2" class="form-result alert">
+                <div class="content"></div>
+                </div>  
                     </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- end: Subscribe-->
     <!-- Page Content -->
     <section id="page-content">
-        <div class="container">
+        <div class="container" id="contact">
             <div class="row">
                 <div class="card">
                     <div class="card-body">
@@ -488,6 +465,8 @@
     <script src="js/plugins.js"></script>
     <!--Template functions-->
     <script src="js/functions.js"></script>
+    <!-- Validation form -->
+    <script src="./js/form.js"></script>
 </body>
 
 </html>
