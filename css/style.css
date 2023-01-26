@@ -6552,7 +6552,7 @@ video { width: 100%; }
 
 .bg-overlay[data-style="1"] { background: #fff; }
 
-.bg-overlay[data-style="2"] { background: #2250fc; opacity: .9; }
+.bg-overlay[data-style="2"] { background: #2250fc; opacity: .9; }form-control
 
 .bg-overlay[data-style="3"] { background: -webkit-linear-gradient(310deg, #7c1bd6 0%, #31049b 100%); background: linear-gradient(140deg, #7c1bd6 0%, #31049b 100%); opacity: .9; }
 
