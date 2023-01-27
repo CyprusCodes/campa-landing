@@ -87,17 +87,17 @@
                     <div class="slide-captions text-light">
                         <!-- Captions -->
                         <span data-animate="fadeInUp" data-animate-delay="300" class="strong"><a href="#"
-                           class="business"><span class="business">Let's Do This</span></a>
+                                class="business"><span class="business">Let's Do This</span></a>
                         </span>
                         <h1 data-animate="fadeInUp" data-animate-delay="600">We’re Campa.AI, A Creative<br>Startup Based
                             in Melburne</h1>
                         <div data-animate="fadeInUp" data-animate-delay="900">
                             <button type="button" class="btn btn-roundeded btn-reveal btn-reveal-left">
                                 <a href="#now">
-                                <span>SUBCRIBE
-                                    NOW</span><i class="icon-chevron-right"></i>
+                                    <span>SUBCRIBE
+                                        NOW</span><i class="icon-chevron-right"></i>
                                 </a>
-                                </button>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
                 <div class="col-lg-2">
                     <div class="text-box hover-effect text-dark">
                         <a href="#"> <i class="fa fa-paper-plane"></i>
-                            
+
                             <h3>Tags &amp; Models </h3>
                             <p>Ispendisse consectetur fringilla luctus usce id mi diam, non ornare.</p>
                         </a>
@@ -151,7 +151,7 @@
         </section>
         <!-- end: Text Boxes -->
         <!-- About us -->
-        <section  id="about">
+        <section id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 m-b-60 ">
@@ -161,8 +161,8 @@
                             that never been told!. Fusce id mi diam, non ornare. Fusce id mi diam, non ornare orci.
                             Pellentesque ipsum erat, facilisis ut venenatis eu.</p>
                         <a href="#services " class="btn btn-dark btn-outline btn-roundeded ">Our Services</a>
-                            </div>
-                        <div class="col-lg-6 offset-1 m-t-40 ">
+                    </div>
+                    <div class="col-lg-6 offset-1 m-t-40 ">
                         <div class="row ">
                             <!-- features box -->
                             <div class="col-lg-6 ">
@@ -245,12 +245,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+    </div>
     </div>
     </section>
     <!-- end: Page Content -->
-       <!-- Subscribe-->
-    <section class="text-center background-image p-t-200 p-b-200 text-light" id="now" style="background-image:url(img/back.jpg);">
+    <!-- Subscribe-->
+    <section class="text-center background-image p-t-200 p-b-200 text-light" id="now"
+        style="background-image:url(img/back.jpg);">
         <div id="particles-dots" class="particles"></div>
         <div class="container">
             <div data-animate="fadeInUp">
@@ -266,17 +267,21 @@
                 <div class="search-form">
                     <h6>Stay ready, we`re launching soon</h6>
                     <div class="d-flex justify-content-center">
-                    <form class="form-inline col-lg-6" name="newsletter-subscription" id="newsletter-subscription" onsubmit="event.preventDefault(); return validateForm()" class="newsletter-form wow pixFadeUp" data-pixsaas="newsletter-subscription">
-                        <div class="input-group center input-group-md">
-                            <input type="email" placeholder="Enter your email" class="form-control" id="newsletter-form-email">
-                            <span class="input-group-btn">
-                                <button type="submit" class="btn btn-blue" id="newsletter-wiki-submit">Subscribe</button>
-                            </span>
-                        </div>
-                          <div id="form-result2" class="form-result alert">
-                <div class="content"></div>
-                </div>  
-                    </form>
+                        <form class="form-inline col-lg-6" name="newsletter-subscription" id="newsletter-subscription"
+                            onsubmit="event.preventDefault(); return validateForm()"
+                            class="newsletter-form wow pixFadeUp" data-pixsaas="newsletter-subscription">
+                            <div class="input-group center input-group-md">
+                                <input type="email" placeholder="Enter your email" class="form-control"
+                                    id="newsletter-form-email">
+                                <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-blue"
+                                        id="newsletter-wiki-submit">Subscribe</button>
+                                </span>
+                            </div>
+                            <div id="form-result2" class="form-result alert">
+                                <div class="content"></div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -284,48 +289,55 @@
     </section>
     <!-- end: Subscribe-->
     <!-- Page Content -->
-    <section id="page-content">
+
+    <!-- CONTENT -->
+    <section>
         <div class="container" id="contact">
+            <div class="row" >
+                <div class="col-lg-6" >
+                    <!-- image -->
+                    <img src="./img/main-image2.png" style="width: 80%; ">
+                </div> 
+                <div class="col-lg-6">
+                    <h3 class="text-uppercase">Get In Touch</h3>
+                    
+                    <div class="m-t-30">
+                      
+
+                         <form action="#" class="faq-form" id="contact" data-pixsaas="contact-forms" name="myForm">
+            <div class=" row">
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Ad Soyad" id="names" />
+                <label class="alert-danger p-1" id="un" data-translate="name_must">Name must be filled out</label>
+
+              </div>
+
+            
+              <div class="col-md-6">
+                <input type="email" name="email" class="form-control" placeholder="Email" id="email" />
+                <label class="alert-danger p-1" id="trois" data-translate="email_must">Email must be filled out</label>
+              </div>
+            </div>
+            <textarea name="mesaj" class="form-control" cols="30" rows="10" placeholder="Mesaj"></textarea>
+
+            <button type="button" id="submit-Contactform" class="pix-btn submit-btn btn btn-primary" data-translate="contact_btn">
+              Gönder
+            </button>
+
+            <input type="hidden" name="recaptcha_response" id="recaptchaResponse" />
             <div class="row">
-                <div class="card">
-                    <div class="card-body">
-                        <form id="form2" class="form-validate">
-                            <h3>Drop us a Message</h3>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="txtName" class="form-control" placeholder="Your Name"
-                                            required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="txtEmail" class="form-control" placeholder="Your Email"
-                                            required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="txtPhone" class="form-control"
-                                            placeholder="Your Phone Number" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <textarea name="txtMsg" class="form-control" placeholder="Your Message"
-                                            style="width: 100%; min-height: 160px;" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <button type="submit" class="btn">Submit</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+              <div id="form-result3" class="form-result1">
+                <div class="content1"></div>
+              </div>
+            </div>
+          </form>
                     </div>
                 </div>
+                
             </div>
-
-        </div>
         </div>
     </section>
+
     <!-- end: Page Content -->
     <!-- Page Content -->
     <section id="page-content">
@@ -379,7 +391,7 @@
 
 
 
- 
+
 
     <!-- Scroll top -->
 
@@ -464,9 +476,12 @@
     <script src="js/jquery.js"></script>
     <script src="js/plugins.js"></script>
     <!--Template functions-->
-    <script src="js/functions.js"></script>
+    
     <!-- Validation form -->
     <script src="./js/form.js"></script>
+    <script src="./js/custom.js"></script>
+
+    <script src="js/functions.js"></script>
 </body>
 
 </html>
