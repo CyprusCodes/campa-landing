@@ -150,7 +150,7 @@ $("#submit-Bookingform").on("click", function (e) {
     data: $formBooking.serializeArray(),
     success: function success(data) {
       $('button[type="submit"]').removeClass("clicked");
-      $("#submit-Bookingform").html("Gönder");
+      $("#submit-Bookingform").html("send");
       $("#submit-Bookingform").prop("disabled", false);
       $("#form-result3")
         .addClass("alert-warning")
@@ -166,7 +166,7 @@ $("#submit-Bookingform").on("click", function (e) {
     },
     error: function error() {
       $('button[type="submit"]').removeClass("clicked");
-      $("#submit-Bookingform").html("Gönder");
+      $("#submit-Bookingform").html("send");
       $("#submit-Bookingform").prop("disabled", false);
       $("#form-result3")
         .addClass("alert-danger")
@@ -180,7 +180,7 @@ $("#submit-Bookingform").on("click", function (e) {
     $("#form-result3").css("display", "none"),
     $('button[type="submit"]').addClass("clicked"),
     $("#submit-Bookingform").prop("disabled", true),
-    $("#submit-Bookingform").html("Gönderiliyor..")
+    $("#submit-Bookingform").html("sendiliyor..")
   );
 });
 
@@ -233,7 +233,7 @@ $("#submit-Contactform").click(function () {
       data: $formContact.serializeArray(),
       success: function success(data) {
         $('button[type="submit"]').removeClass("clicked");
-        $("#submit-Contactform").html("Gönder");
+        $("#submit-Contactform").html("send");
         $("#submit-Contactform").prop("disabled", false);
         $("#form-result3")
           .addClass("alert-warning")
@@ -243,11 +243,11 @@ $("#submit-Contactform").click(function () {
           .addClass("alert-success")
           .removeClass("alert-warning alert-danger")
           .css("display", "block");
-        $("#form-result3 > .content1").html("Message sent");
+        $("#form-result3 > .content1").html("Message sent successfully!");
       },
       error: function error() {
         $('button[type="submit"]').removeClass("clicked");
-        $("#submit-Contactform").html("Gönder");
+        $("#submit-Contactform").html("send");
         $("#submit-Contactform").prop("disabled", false);
         $("#form-result3")
           .addClass("alert-danger")
@@ -261,7 +261,7 @@ $("#submit-Contactform").click(function () {
       $("#form-result3").css("display", "none"),
       $('button[type="submit"]').addClass("clicked"),
       $("#submit-Contactform").prop("disabled", true),
-      $("#submit-Contactform").html("Gönderiliyor..")
+      $("#submit-Contactform").html("sending...")
     );
   }
 });
