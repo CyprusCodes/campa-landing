@@ -288,7 +288,6 @@
     </section>
     <!-- end: Subscribe-->
     <!-- Page Content -->
-
     <!-- CONTENT -->
     <section>
         <div class="container" id="contact">
@@ -306,19 +305,20 @@
                         <form action="#" class="faq-form" id="contact" data-pixsaas="contact-forms" name="myForm">
                             <div class=" row">
                                 <div class="col-md-6">
-                                    <input type="text" name="name" class="form-control" placeholder="Name"
-                                        id="names" required />
+                                    <input type="text" name="name" class="form-control" placeholder="Name" id="names"
+                                        required />
                                     <label class="alert-danger p-1" id="un" data-translate="name_must">Name must be
                                         filled out</label>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" name="email" class="form-control" placeholder="Email"
-                                        id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                                    <input type="email" name="email" class="form-control" placeholder="Email" id="email"
+                                        required />
                                     <label class="alert-danger p-1" id="trois" data-translate="email_must">Email must be
                                         filled out</label>
                                 </div>
                             </div>
-                            <textarea name="mesaj" class="form-control1" cols="30" rows="10" placeholder="Message"></textarea>
+                            <textarea name="mesaj" class="form-control1" cols="30" rows="10"
+                                placeholder="Message"></textarea>
                             <button type="button" id="submit-Contactform" class="pix-btn submit-btn btn btn-primary"
                                 data-translate="contact_btn">
                                 Send Message
@@ -335,6 +335,15 @@
 
             </div>
         </div>
+        <script>
+            document.getElementById("submit-Contactform").addEventListener("click", function () {
+                if (!document.getElementById("email").value) {
+                    alert("Email must be filled out");
+                    return false;
+                }
+                // submit form
+            });
+        </script>
     </section>
 
     <!-- end: Page Content -->
@@ -347,7 +356,7 @@
 
                     <div class="carousel client-logos dots-grey" data-items="5" data-arrows="false">
                         <div>
-                            <a href="#"><img alt="" src="img/clients/amrc.png" ></a>
+                            <a href="#"><img alt="" src="img/clients/amrc.png"></a>
                         </div>
                         <div>
                             <a href="#"><img alt="" src="img/clients/main-logo.png"></a>
@@ -361,7 +370,7 @@
                         <div>
                             <a href="#"><img alt="" src="img/clients/yataylogogigem.png"></a>
                         </div>
-                    
+
                     </div>
                     <div class="line"></div>
 
@@ -389,13 +398,12 @@
                             <div class="widget-title">Campa.AI</div>
                             <p class="mb-5">Built with love in Northen Cyprus, Lefkosa, Nicosia<br>
                                 All rights reserved. Copyright © 2023. CAMPA.AI.</p>
-                            <a href="#now"
-                                class="btn btn-inverted" target="_blank">Subscribe Now</a>
+                            <a href="#now" class="btn btn-inverted" target="_blank">Subscribe Now</a>
                         </div>
                     </div>
                     <div class="col-lg-7">
                         <div class="row">
-                           
+
                             <div class="col-lg-3">
                                 <div class="widget">
                                     <div class="widget-title">Features</div>
@@ -434,16 +442,14 @@
         </div>
         <div class="copyright-content">
             <div class="container">
-                <div class="copyright-text text-center">&copy; 2023 - Responsive. All Rights Reserved.<a href="https://futurecast.studio/"
-                        target="_blank" rel="noopener"> FuturCast</a> </div>
+                <div class="copyright-text text-center">&copy; 2023 - Responsive. All Rights Reserved.<a
+                        href="https://futurecast.studio/" target="_blank" rel="noopener"> FuturCast</a> </div>
             </div>
         </div>
     </footer>
     <!-- end: Footer -->
     </div> <!-- end: Body Inner -->
-    <!-- Scroll top -->
-    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
-    <!--Plugins-->
+   
     <script src="js/jquery.js"></script>
     <script src="js/plugins.js"></script>
     <!--Template functions-->
@@ -453,7 +459,7 @@
     <script src="./js/custom.js"></script>
 
     <script src="js/functions.js"></script>
-    <script src="//code.tidio.co/gy9yvy1svckvgwjczum3ebbt08zea23l.js" async></script>   
+    <script src="//code.tidio.co/gy9yvy1svckvgwjczum3ebbt08zea23l.js" async></script>
 </body>
 
 </html>

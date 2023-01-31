@@ -15349,11 +15349,6 @@ i:not(.fa):not(.fab):not(.far):not(.fas) {
 .icon-chevron-right:before {
   content: "\e930";
 }
-
-.icon-chevron-up:before {
-  content: "\e931";
-}
-
 .icon-chevrons-down:before {
   content: "\e932";
 }

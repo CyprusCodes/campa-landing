@@ -86,7 +86,7 @@ var PIXELSIGNS = PIXELSIGNS || {};
 
   PIXELSIGNS.documentOnScroll = {
     init: function () {
-      PIXELSIGNS.initialize.sectionBackground();
+      //  PIXELSIGNS.initialize.sectionBackground();
 
       if ($(window).scrollTop() > 300) {
         $(".return-to-top").addClass("back-top");
@@ -161,7 +161,7 @@ $("#submit-Bookingform").on("click", function (e) {
         .removeClass("alert-warning alert-danger")
         .css("display", "block");
       $("#form-result3 > .content1").html(
-        "Super! Yeriniz Ayrıldı - Lütfen 24 saat içinde çağrımızı bekleyin"
+        "Super! Your place is reserved - Please wait for our call with in 24 hours"
       );
     },
     error: function error() {
@@ -173,7 +173,7 @@ $("#submit-Bookingform").on("click", function (e) {
         .removeClass("alert-warning alert-success")
         .css("display", "block");
       $("#form-result3 > .content1").html(
-        "Malesef yeriniz ayrılmadı. Lütfen tekrar deneyin. Alternatif olarak 05338483559 numaralı telefondan bize ulaşabilirsiniz"
+        "Sorry, your message could not be delivered. Please try again. Alternatively, you can contact us at 05488250443"
       );
     },
   }).then(

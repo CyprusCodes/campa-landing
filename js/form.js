@@ -2,6 +2,7 @@
 function validateForm() {
   var email =
     document.forms["newsletter-subscription"]["newsletter-form-email"].value;
+
   if (!email) {
     alert("Email must be filled out");
     return false;
