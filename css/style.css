@@ -236,6 +236,7 @@ section.dark,
 
 #page-title[data-bg-parallax] .page-title>h1 {
   color: #fff;
+
 }
 
 #page-title[data-bg-parallax] .page-title>span {
@@ -20612,6 +20613,7 @@ body.breakpoint-xs .box-fancy [class*="col-"] {
 #page-title[data-bg-parallax],
 [data-bg-parallax] {
   background-color: #1e2022;
+  
 }
 
 .parallax-container {
