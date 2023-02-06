@@ -13,10 +13,19 @@ section {
 section .page-content {
   padding: 0;
 }
+#icon-features img{
+  width: 50px;
+    height: 50px;
+    border-radius: 18px;
+}
+
 
 @media (max-width: 767.98px) {
   section {
     padding: 40px 0;
+  }
+  .tech-img{
+    width: 100%;
   }
 }
 
@@ -11245,7 +11254,7 @@ Helpers
 }
 
 .p-b-200 {
-  padding-bottom: 200px !important;
+  padding-bottom: 80px !important;
 }
 
 .p-t-0 {
@@ -11329,7 +11338,7 @@ Helpers
 }
 
 .p-t-200 {
-  padding-top: 200px !important;
+  padding-top: 80px !important;
 }
 
 .p-r-0 {
@@ -11539,11 +11548,11 @@ Helpers
   }
 
   .p-t-200 {
-    padding-top: 80px !important;
+    padding-top: 200px !important;
   }
 
   .p-b-200 {
-    padding-bottom: 80px !important;
+    padding-bottom: 200px !important;
   }
 
   .text-sm-center {
@@ -16704,7 +16713,6 @@ div.icon-box:before {
 
 /*Text Box*/
 .text-box {
-  padding: 40px;
   text-align: center;
   -webkit-transition: background 0.4s ease 0s;
   transition: background 0.4s ease 0s;
@@ -16764,7 +16772,7 @@ div.icon-box:before {
   color: #fff;
 }
 
-.text-box.hover-effect {
+/* .text-box.hover-effect {
   padding: 30px 30px 10px 30px;
 }
 
@@ -16782,7 +16790,7 @@ div.icon-box:before {
 
 .text-box.hover-effect:hover p {
   opacity: 1;
-}
+} */
 
 /* ----------------------------------------------------------------
     Featured Boxes
