@@ -24,26 +24,16 @@
                         <a href="index.html">
                             <span class="logo-default"> <img src="./img/logo/logo.png"></span>
                            
-                            <span class="logo-dark"> <img src="./img/logo/logo.png" style="width:250px"></span>
+                            <span class="logo-dark" id="logoimg"> <img src="./img/logo/logo.png" style="width:250px"></span>
 
                         </a>
                     </div>
                     <!--End: Logo-->
-                    <!-- Search -->
-                    <div id="search"><a id="btn-search-close" class="btn-search-close" aria-label="Close search form"><i
-                                class="icon-x"></i></a>
-                        <form class="search-form" action="search-results-page.html" method="get">
-                            <input class="form-control" name="q" type="text" placeholder="Type & Search..." />
-                            <span class="text-muted">Start typing & press "Enter" or "ESC" to close</span>
-                        </form>
-                    </div>
-                    <!-- end: search -->
+                  
                     <!--Header Extras-->
                     <div class="header-extras">
                         <ul>
-                            <li>
-                                <a id="btn-search" href="#"> <i class="icon-search"></i></a>
-                            </li>
+                            
                             <li>
                                 <div class="p-dropdown">
                                     <a href="#"><i class="icon-globe"></i><span>EN</span></a>
@@ -69,7 +59,7 @@
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="#about">About Us</a></li>
-                                    <li><a href="#">Features</a></li>
+                                    <li><a href="#features">Features</a></li>
                                     <li><a href="#contact">Contact Us</a></li>
                                 </ul>
                             </nav>
@@ -105,51 +95,54 @@
                 </div>
         </section>
         <!-- end: Section -->
+        <div id="features"></div>
         <!-- Text Boxes -->
-        <section class="no-padding equalize" data-equalize-item=".text-box">
-            <div class="row d-flex justify-content-center">
-                <!--Box 1-->
-                <div class="col-lg-2">
-                    <div class="text-box hover-effect text-dark">
-                        <a href="#"> <i class="fa fa-paper-plane"></i>
-
-                            <h3>Tags &amp; Models </h3>
-                            <p>Ispendisse consectetur fringilla luctus usce id mi diam, non ornare.</p>
-                        </a>
+        <section class="no-padding equalize">
+            <div class="container">
+                <div class="row d-flex justify-content-center mt-6">
+                    <!--Box 1-->
+                    <div class="col-lg-3">
+                        <div class="text-box hover-effect text-dark">
+                                <a href="#" id="icon-features"> <img src="./img/chatgpt.jpeg" alt=""></i>
+                                    <h3>chatGPT </h3>
+                                <p>ChatGPT is a language model developed by OpenAI for natural language generation.</p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <!--End: Box 1-->
-                <!--Box 2-->
-                <div class="col-lg-2">
-                    <div class="text-box hover-effect text-dark">
-                        <a href="#"> <i class="fas fa-chart-pie"></i>
-                            <h3>Our charts </h3>
-                            <p>Ispendisse consectetur fringilla luctus usce id mi diam, non ornare.</p>
-                        </a>
+                    <!--End: Box 1-->
+                    <!--Box 2-->
+                    <div class="col-lg-3">
+                        <div class="text-box hover-effect text-dark">
+                            <a href="#" id="icon-features"> <img src="./img/ChatGPT_800x800.png" alt=""></i>
+                                <h3>dall-e </h3>
+                                <p>DALL-E is an AI model developed by OpenAI that generates unique images from textual descriptions.</p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <!--End: Box 2-->
-                <!--Box 3-->
-                <div class="col-lg-2">
-                    <div class="text-box hover-effect text-dark">
-                        <a href="#"> <i class="far fa-lightbulb"></i>
-                            <h3>Light &amp; Dark</h3>
-                            <p>Ispendisse consectetur fringilla luctus usce id mi diam, non ornare.</p>
-                        </a>
+                    <!--End: Box 2-->
+                    <!--Box 3-->
+                    <div class="col-lg-3">
+                        <div class="text-box hover-effect text-dark">
+                            <a href="#" id="icon-features"> <img src="./img/chatsonic.webp" alt=""></i>
+                                <h3>chatsonic</h3>
+                                <p>Chatsonic is a potentially unknown chatbot or conversational AI platform.</p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <!--End: Box 3-->
-                <!--Box 4-->
-                <div class="col-lg-2">
-                    <div class="text-box hover-effect text-dark">
-                        <a href="#"> <i class="fa fa-language"></i>
-                            <h3>RTL Support</h3>
-                            <p>Ispendisse consectetur fringilla luctus usce id mi diam, non ornare.</p>
-                        </a>
+                    <!--End: Box 3-->
+                    <!--Box 4-->
+                    <div class="col-lg-3">
+                        <div class="text-box hover-effect text-dark">
+                            <a href="#" id="icon-features"> <img src="./img/midjourney.png" alt=""></i>
+                                <h3>Midjourney</h3>
+                                <p>Midjourney AI is a potentially unknown entity that provides AI services or solutions.</p>
+                            </a>
+                        </div>
                     </div>
+                    <!--End: Box 4-->
                 </div>
-                <!--End: Box 4-->
             </div>
+        
         </section>
         <!-- end: Text Boxes -->
         <!-- About us -->
@@ -159,16 +152,18 @@
                     <div class="col-lg-5 m-b-60 ">
                         <h4>About us</h4>
                         <h2>Set your goals high, and don't stop till you get there.</h2>
-                        <p class="lead ">Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story,
-                            that never been told!. Fusce id mi diam, non ornare. Fusce id mi diam, non ornare orci.
-                            Pellentesque ipsum erat, facilisis ut venenatis eu.</p>
+                        <p class="lead ">Our AI startup is on a mission to harness the power of AI to tackle complex problems and drive progress.
+                             With a team of experts and a passion for innovation, 
+                             we are committed to delivering game-changing AI solutions 
+                             that will shape the future and bring positive impact to society.
+                        </p>
                         <a href="#services " class="btn btn-dark btn-outline btn-roundeded ">Our Services</a>
                     </div>
-                    <div class="col-lg-6 offset-1 m-t-40 ">
+                    <div class="col-lg-6 m-t-40 ">
                         <div class="row ">
                             <!-- features box -->
                             <div class="col-lg-6 ">
-                                <img src="./img/TechPractices-R.jpg">
+                                <img src="./img/TechPractices-R.jpg" class="tech-img">
                             </div>
                             <!-- end: features box -->
                         </div>
@@ -189,9 +184,9 @@
                         <div class="text-middle">
                             <div class="heading-text text-light text-center">
                                 <h2 class="font-weight-800"><span>Create beautiful websites with ease</span></h2>
-                                <p>Polo is jam packed with tons of features that will give you the power to create the
-                                    web
-                                    as you always wanted.</p>
+                                <p>Building beautiful websites made easy with our AI-powered platform, 
+                                    offering user-friendly design options and freeing you from coding limitations.
+                                </p>
                                 <a href="#" class="btn btn-light btn-outline btn-rounded">Read More</a>
                             </div>
                         <!-- </div> -->
@@ -216,9 +211,8 @@
                                 <div class="timeline-icon">1</div>
                                 <h4>How we started</h4>
                                 <div class="timeline-item-date">21 January, 2021</div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
-                                    nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis
-                                    sagittis ligula in sodales vehicula....
+                                <p>Starting your journey to a stunning website is as simple as signing up with our AI-powered platform,
+                                  where intuitive design tools and endless customization options await.
                                 </p>
                             </li>
                             <!--end: Timeline item-->
@@ -227,9 +221,9 @@
                                 <div class="timeline-icon">2</div>
                                 <h4>The Plan</h4>
                                 <div class="timeline-item-date">15 May, 2021</div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
-                                    nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis
-                                    sagittis ligula in sodales vehicula....
+                                <p>Our plan is to revolutionize website building with AI technology,
+                                     making it easier and more accessible for everyone to create a website 
+                                     that reflects their unique vision and brand.
                                 </p>
                             </li>
                             <!--end: Timeline item-->
@@ -238,10 +232,9 @@
                                 <div class="timeline-icon">3</div>
                                 <h4>Research</h4>
                                 <div class="timeline-item-date">18 December, 2021</div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
-                                    nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis
-                                    sagittis ligula in sodales vehicula....
-                                </p>
+                                <p>Our dedicated research team stays ahead of the curve by exploring new AI techniques and staying on top of industry trends.
+                                    This allows us to provide our clients with the latest and greatest AI solutions,
+                                    continuously improving their experience and delivering measurable results
                             </li>
                             <!--end: Timeline item-->
                     </div>
@@ -252,7 +245,7 @@
     </section>
     <!-- end: Page Content -->
     <!-- Subscribe-->
-    <section class="text-center background-image p-t-200 p-b-200 text-light" id="now"
+    <section class="text-center background-image p-t-80 p-b-80 text-light" id="now"
         style="background-image:url(img/back.jpg);">
         <div id="particles-dots" class="particles"></div>
         <div class="container">
@@ -275,7 +268,7 @@
                             <div class="input-group center input-group-md">
                                 <input type="email" placeholder="Enter your email" class="form-control"
                                     id="newsletter-form-email">
-                                <span class="input-group-btn">
+                                    &nbsp; &nbsp; <span class="input-group-btn">
                                     <button type="submit" class="btn btn-blue"
                                         id="newsletter-wiki-submit">Subscribe</button>
                                 </span>
@@ -411,10 +404,10 @@
                                 <div class="widget">
                                     <div class="widget-title">Features</div>
                                     <ul class="list">
-                                        <li><a href="#">Layouts</a></li>
-                                        <li><a href="#">Headers</a></li>
-                                        <li><a href="#">Widgets</a></li>
-                                        <li><a href="#">Footers</a></li>
+                                        <li><a href="#features">ChatGPT</a></li>
+                                        <li><a href="#features">Dall-e</a></li>
+                                        <li><a href="#features">Chatsonic</a></li>
+                                        <li><a href="#features">Midjourney</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -423,7 +416,7 @@
                                     <div class="widget-title">Links</div>
                                     <ul class="list">
                                         <li><a href="#about">About us</a></li>
-                                        <li><a href="#">Features</a></li>
+                                        <li><a href="#features">Features</a></li>
                                         <li><a href="#now">Subscribe</a></li>
                                         <li><a href="#contact">Contact Us</a></li>
                                     </ul>
@@ -451,8 +444,8 @@
         </div>
         <div class="copyright-content">
             <div class="container">
-                <div class="copyright-text text-center">&copy; 2023 - Responsive. All Rights Reserved.<a
-                        href="https://futurecast.studio/" target="_blank" rel="noopener"> FuturCast</a> </div>
+                <div class="copyright-text text-center">&copy; 2023  All Rights Reserved Design by <a
+                        href="https://futurecast.studio/" target="_blank" rel="noopener"> FutureCast</a> </div>
             </div>
         </div>
     </footer>
