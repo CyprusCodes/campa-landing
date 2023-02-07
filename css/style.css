@@ -1835,6 +1835,10 @@ HEADER: Responsive
   #header #logo>a img {
     max-height: 80px;
     padding-bottom: 6px;
+   
+  }
+  #logoimg img{
+    width: 180px !important;
   }
 
   #header #logo .logo-responsive {
